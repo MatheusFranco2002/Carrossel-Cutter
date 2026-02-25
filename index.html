@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel Cutter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <section class="container">
+
+      <header>
+        <h1>Gerador de Carrossel</h1>
+        <p>Envie uma imagem e gere 3 partes prontas para carrossel</p>
+      </header>
+
+      <section class="controls">
+        <input type="file" id="upload" accept="image/*">
+        <button id="generate">Gerar carrossel</button>
+      </section>
+
+      <section class="preview">
+        <img id="original" alt="Pré-visualização da imagem">
+      </section>
+
+      <section class="result">
+        <div class="item">
+          <button class="download" title="Baixar imagem">⬇️</button>
+          <canvas></canvas>
+        </div>
+
+        <div class="item">
+          <button class="download" title="Baixar imagem">⬇️</button>
+          <canvas></canvas>
+        </div>
+
+        <div class="item">
+          <button class="download" title="Baixar imagem">⬇️</button>
+          <canvas></canvas>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
